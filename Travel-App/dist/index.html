@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Language Processing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link href="main.css" rel="stylesheet"></head>
+
+    <body>
+
+        <header class="header">
+            <nav>
+                <ul>
+                    <li>
+                        <div class="line"></div>
+                        <h1>Travel Planner App</h1>
+                        <div class="line"></div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div class="form-block">
+                    <input id="country" type="text" placeholder="Please insert country">
+                    <span class="error">Please enter coutry</span>
+                    <label for="">Start Date:</label>
+                    <input id="start-date" type="date">
+                    <label for="">End Date:</label>
+                    <input id="end-date" type="date">
+                    <input class="button submit-plan" type="submit" value="Add plan">
+                </div>
+            <section>
+
+            <div class="plannes-section">
+                <strong>My Planes:</strong>
+                <div id="plans">
+                    <div class="location-img">
+                        <img id="img-location" src="https://dummyimage.com/600x400/ffffff/000000.jpg&text=image+location" alt="">
+                    </div>
+                    <div class="plan-details">
+                        <label for="">My plan to:</label>
+                        <p id="place">.........</p>
+                        <label for="">Trip long:</label>
+                        <p id="plan-info">.............</p>
+                        <label for="">Weather Discrption: </label>
+                        <p id="weather">.............</p>   
+                        <label for="">Min-Temp&Max-temp:</label>
+                        <p id="weather-minMax">...........</p>  
+                    </div>
+                </div>
+                <button class="resetPlan">Reset Plan</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>This is a footer</p>
+        </footer>
+
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+
+    <script type="text/javascript" src="main.js"></script></body>
+</html>

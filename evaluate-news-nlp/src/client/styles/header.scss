@@ -1,0 +1,20 @@
+header {
+    padding: 50px 40px 10px;
+    ul {
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .line {
+                width: 15%;
+                height: 1px;
+                border-bottom: 1px solid #ababab;
+            }
+            h1 {
+                font-size: 20px;
+                padding: 0 20px;
+            }
+        }
+    }
+    
+}

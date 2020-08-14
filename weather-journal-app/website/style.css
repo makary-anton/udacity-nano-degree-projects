@@ -1,0 +1,124 @@
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #bbbbbb; 
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #bbbbbb; 
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #bbbbbb; 
+} 
+body{
+    background: #fffff8;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+}
+
+#app{
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    background: #2f8682;
+    color: #ffffff;
+    justify-content: center;
+    grid-gap: 1em;
+    font-size: 20px;
+    padding: 40px;
+}
+
+.holder{
+    font-size: 40px;
+    text-align: center;
+}
+
+.entry{
+    background: rgba(59, 74, 107, .4);
+    padding: 20px;
+}
+
+#entryHolder{
+    height: 150px;
+    font-size: 27px;
+}
+
+#entryHolder label {
+    display: inline;
+}
+
+#date,
+#temp,
+#content {
+    display: inline;
+}
+
+.headline {
+    text-transform: uppercase;
+}
+.title{
+    color: #000000;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 27px;
+}
+
+input{
+    display:block;
+    height: 60px;
+    width: 320px;
+    margin: 0 auto;
+    background:#ffffff;
+    color: #000;
+    font-size: 20px;
+    border: none;
+    padding-left: 15px;
+}
+
+button{
+    width: 400px;
+    height: 100px;
+    background: #3b4a6b;
+    color: #ffffff;
+    font-size: 26px;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+    cursor: pointer;
+    margin: auto;
+}
+#generate:hover {
+    background-color: #5e76a9;
+}
+h1{
+    font-size: 36px;
+}
+
+textarea{
+    background:#ffffff;
+    color: #000000;
+    font-size: 20px;
+    padding: 15px;
+}
+
+footer {
+    background-color: #ab3939;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
+}

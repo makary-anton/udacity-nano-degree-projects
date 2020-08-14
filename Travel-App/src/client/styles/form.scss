@@ -1,0 +1,125 @@
+main {
+    strong {
+        display: block;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .form-block {
+        background-color: rgba(139, 161, 112, .5);
+        border: 1px solid #545454;
+        border-radius: 3px;
+        padding: 40px;
+        border: none;
+        .error {
+            display: none;
+            margin: 0 0 11px;
+            font-size: 12px;
+            color: #fff;
+        }
+        label {
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            line-height: 16px;
+            margin: 10px 0;
+            border: 1px solid #fff;
+            border-radius: 3px;
+            padding: 10px;
+            &.button {
+                font-size: 15px;
+                background-color: #ab3939;
+                color: #fff;
+                border: 1px solid #ab3939;
+                border-radius: 3px;
+                margin-top: 25px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #e34c4c;
+                    border: 1px solid #e34c4c;
+                }
+            }
+        }
+        
+    }
+
+    .plannes-section {
+        background-color:  rgba(139, 161, 112, .5);;
+        border-radius: 3px;
+        padding: 20px;
+        border: none;
+        text-align: center;
+        strong {
+            display: block;
+            font-size: 25px;
+            text-align: center;
+            padding: 0 0 20px;
+            color: #c0ff86;
+        }
+    }
+
+    #plans {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        .location-img {
+            img {
+                width: 100%;
+                max-width: 520px;
+            }
+        }
+        .plan-details {
+            color: #fff;
+            text-align: left;
+            h4 {
+                font-size: 18px;
+                padding-bottom: 10px;
+            }
+            .buttons {
+                padding: 10px 0 20px;
+                display: flex;
+                justify-content: space-evenly;
+                button {
+                    font-size: 14px;
+                    background-color: #ffc0c0;
+                    padding: 5px 10px;
+                    border: none;
+                }
+            }
+            p {
+                font-size: 12px;
+                padding: 10px 0;
+            }
+        }
+    }
+    button {
+        font-size: 25px;
+        width: 50%;
+        margin-top: 20px;
+        padding: 10px 0;
+        background-color: #ffc0c0;
+        border: 1px solid #ffc0c0;
+        color: #b72d2d;
+        cursor: pointer;
+        &:hover {
+            background-color: #e34c4c;
+            border: 1px solid #e34c4c;
+            color: #fff;
+        }
+    }
+}
+
+@media(max-width: 768px) { 
+    main {
+        #plans {
+            flex-direction: column;
+            .plan-details {
+                margin-top: 20px;
+            }
+        } 
+    } 
+}
+
+

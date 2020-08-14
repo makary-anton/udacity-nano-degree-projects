@@ -1,0 +1,55 @@
+main {
+    strong {
+        display: block;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    form {
+        background-color: #8cd46edd;
+        border: 1px solid #545454;
+        border-radius: 3px;
+        padding: 40px;
+        border: 1px solid #8cd46edd;
+        input {
+            width: 100%;
+            line-height: 16px;
+            margin: 10px 0;
+            border: 1px solid #fff;
+            border-radius: 3px;
+            padding: 10px;
+            &.button {
+                font-size: 15px;
+                background-color: #e68080;
+                color: #fff;
+                border: 1px solid #e68080;
+                border-radius: 3px;
+                margin-top: 25px;
+                cursor: pointer;
+            }
+        }
+        .error {
+            display: none;
+            font-size: 12px;
+            color:#fff;
+        }
+    }
+
+    #results {
+        margin: 30px 0;
+        min-height: 200px;
+        div {
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 20px;
+        }
+        p {
+            font-size: 15px;
+            display: inline;
+        }
+    }
+}
+
+
+
